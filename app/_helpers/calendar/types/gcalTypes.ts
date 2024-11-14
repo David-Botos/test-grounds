@@ -19,9 +19,10 @@ export interface GoogleCalendarEvent {
     title: string;
     start: Date;
     end: Date;
-    description?: string;
+    description?: string | null;
     allDay: boolean;
-    id?: string;
+    id?: string | null;
+    // TODO: check that null is an appropriate type option -- doing this to get it built and deployed
   }
   
   export interface GoogleTokens {
